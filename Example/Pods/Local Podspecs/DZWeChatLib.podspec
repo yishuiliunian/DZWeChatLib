@@ -27,14 +27,12 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '7.0'
   s.requires_arc = true
 
-s.source_files = 'Pod/Classes/**/*', 'Pod/Wechat/**/*.{h,m}'
+  s.source_files = 'Pod/Classes/**/*'
   s.resource_bundles = {
     'DZWeChatLib' => ['Pod/Assets/*.png']
   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  s.libraries = "z", "sqlite3"
-  s.frameworks = "CoreTelephony", "CoreGraphics","SystemConfiguration"
-  s.vendored_libraries = 'Pod/Wechat/**/*.{a}'
+  # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end

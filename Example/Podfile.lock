@@ -1,0 +1,14 @@
+PODS:
+  - DZWeChatLib (0.1.0)
+
+DEPENDENCIES:
+  - DZWeChatLib (from `../`)
+
+EXTERNAL SOURCES:
+  DZWeChatLib:
+    :path: ../
+
+SPEC CHECKSUMS:
+  DZWeChatLib: aca29949d5056c5bac25eddcfe1a0c008ada87f1
+
+COCOAPODS: 0.35.0.rc2
