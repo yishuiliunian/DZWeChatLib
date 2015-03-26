@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  DZWeChatLib: aca29949d5056c5bac25eddcfe1a0c008ada87f1
+  DZWeChatLib: 95ead2ee68000a3547667dc0504785beb72958e9
 
 COCOAPODS: 0.35.0.rc2

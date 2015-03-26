@@ -1,0 +1,2 @@
+PODS_DZWECHATLIB_DZWECHATLIB_LIBRARY_SEARCH_PATHS = "$(PODS_ROOT)/../../Pod/Wechat"
+PODS_DZWECHATLIB_DZWECHATLIB_OTHER_LDFLAGS = -l"WeChatSDK" -l"sqlite3" -l"z" -framework "CoreGraphics" -framework "CoreTelephony" -framework "SystemConfiguration"

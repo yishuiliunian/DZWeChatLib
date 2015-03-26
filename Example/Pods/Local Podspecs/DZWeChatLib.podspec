@@ -10,29 +10,28 @@
 Pod::Spec.new do |s|
   s.name             = "DZWeChatLib"
   s.version          = "0.1.0"
-  s.summary          = "A short description of DZWeChatLib."
+  s.summary          = "DZWeChatLib微信的静态库管理"
   s.description      = <<-DESC
-                       An optional longer description of DZWeChatLib
-
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
+                    DZWeChatLib微信的静态库管理， 会实时跟进
                        DESC
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/DZWeChatLib"
+  s.homepage         = "https://github.com/yishuiliunian/DZWeChatLib"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "stonedong" => "yishuiliunian@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/DZWeChatLib.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/yishuiliunian/DZWeChatLib.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.platform     = :ios, '7.0'
+  s.platform     = :ios, '5.0'
   s.requires_arc = true
 
-  s.source_files = 'Pod/Classes/**/*'
+s.source_files = 'Pod/Classes/**/*', 'Pod/Wechat/**/*.{h,m}'
   s.resource_bundles = {
     'DZWeChatLib' => ['Pod/Assets/*.png']
   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  s.libraries = "z", "sqlite3"
+  s.frameworks = "CoreTelephony", "CoreGraphics","SystemConfiguration"
+  s.vendored_libraries = 'Pod/Wechat/**/*.{a}'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
