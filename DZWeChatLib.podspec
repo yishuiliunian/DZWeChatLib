@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "DZWeChatLib"
-  s.version          = "0.1.0"
+  s.version          = "1.5.0"
   s.summary          = "DZWeChatLib微信的静态库管理"
   s.description      = <<-DESC
                     DZWeChatLib微信的静态库管理， 会实时跟进
@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '5.0'
   s.requires_arc = true
 
-s.source_files = 'Pod/Classes/**/*', 'Pod/Wechat/**/*.{h,m}'
+  s.source_files = 'Pod/Classes/**/*', 'Pod/Wechat/**/*.{h,m}'
   s.resource_bundles = {
     'DZWeChatLib' => ['Pod/Assets/*.png']
   }
