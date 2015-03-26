@@ -1,0 +1,8 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+
+target 'DZWeChatLib', :exclusive => true do
+  pod "DZWeChatLib", :path => "../"
+
+  
+end
